@@ -11,11 +11,13 @@
 
 <div id="app">
 
-    @{{message}}
+    @{{message | capitalize}}:
 
     <input type="text"
-           v-model="message">
-    <pre>@{{$data}}</pre>
+           v-model="message"><br />
+    a = @{{a}}, b = @{{b}}
+
+    <pre>@{{$data | json}}</pre>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.10/vue.min.js"></script>
