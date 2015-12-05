@@ -1,20 +1,37 @@
 /**
  * Created by adam on 05/12/15.
  */
-var vm = new Vue(
+Vue.component('alert', {
+
+    template: '#alert-template',
+
+    props: ['type'],
+
+    data: function()
     {
-        el: '#app',
-        data: {
-            message: "Hello World",
-            a: 2,
-            show: true
-        },
-        computed: {
-            b: function() {
-                return this.a+4;
-            }
+        return {
+            show : true
+        };
+    },
+    computed: {
+
+        alertClasses: function()
+        {
+            var type = this.type;
+
+            return {
+
+                'Alert': true,
+                'Alert--Success': type == 'success',
+                'Alert--Error': type == 'error'
+
+            };
         }
     }
-);
 
+});
+
+new Vue({
+    el: 'body'
+});
 //# sourceMappingURL=all.js.map

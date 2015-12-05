@@ -9,16 +9,21 @@
 </head>
 <body>
 
-<div id="app" v-show="show">
+<alert type="error">
+<strong>Error</strong> Your account has not been updated.
+</alert>
 
-    @{{message | capitalize}}:
+<template id="alert-template" >
 
-    <input type="text"
-           v-model="a"><br />
-    a = @{{a}}, b = @{{b}}
+    <div :class="alertClasses" v-show="show">
 
-    <pre>@{{$data | json}}</pre>
-</div>
+        <slot></slot>
+
+        <span class="Alert__close" @click="show=false">x</span>
+
+    </div>
+
+</template>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.10/vue.min.js"></script>
