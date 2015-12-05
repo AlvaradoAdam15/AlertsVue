@@ -13,6 +13,9 @@
 
     @{{message}}
 
+    <input type="text"
+           v-model="message">
+    <pre>@{{$data}}</pre>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.10/vue.min.js"></script>

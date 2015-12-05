@@ -2,7 +2,7 @@
  * Created by adam on 05/12/15.
  */
 var object = {
-    message: "Hello"
+    message: "Hello World"
 };
 
 var vueconfig = {
