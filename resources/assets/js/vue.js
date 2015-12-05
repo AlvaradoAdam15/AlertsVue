@@ -6,7 +6,8 @@ var vm = new Vue(
         el: '#app',
         data: {
             message: "Hello World",
-            a: 2
+            a: 2,
+            show: true
         },
         computed: {
             b: function() {
