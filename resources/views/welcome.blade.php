@@ -1,45 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Laravel</title>
+<head>
+    <meta name="description" content="[Hello World amb estil]">
+    <meta charset="utf-8">
+    <link href="{{ asset('css/all.css')  }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/app.css')  }}" rel="stylesheet" type="text/css">
+    <title>Vue</title>
+</head>
+<body>
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+<div id="app">
 
-        <style>
-            html, body {
-                height: 100%;
-            }
+    @{{message}}
 
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
+</div>
 
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
-            </div>
-        </div>
-    </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.10/vue.min.js"></script>
+<script src="{{ asset('js/all.js') }}"></script>
+<script src="{{ asset('js/vue.js') }}"></script>
+</body>
 </html>

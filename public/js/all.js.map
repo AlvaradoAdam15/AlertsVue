@@ -1,0 +1,1 @@
+{"version":3,"sources":["vue.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"all.js","sourcesContent":["/**\n * Created by adam on 05/12/15.\n */\nvar object = {\n    message: \"Hello\"\n};\n\nvar vueconfig = {\n    el: '#app',\n    data: object\n};\n\nvar vm = new Vue(vueconfig);"],"sourceRoot":"/source/"}
